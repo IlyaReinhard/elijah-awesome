@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/inspiring-grove-344016/elijah-awesome:$COMMIT_SHA ', '.']
+  args: ['build', '-t', 'gcr.io/inspiring-grove-344016/elijah-awesome:$SHORT_SHA', '.']
   - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/inspiring-grove-344016/elijah-awesome:$COMMIT_SHA ']
+  args: ['push', 'gcr.io/inspiring-grove-344016/elijah-awesome:$SHORT_SHA ']
